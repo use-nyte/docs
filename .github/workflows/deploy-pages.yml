@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: read
+  packages: read
 
 concurrency:
   group: github-pages
@@ -51,9 +52,13 @@ jobs:
         with:
           node-version-file: .nvmrc
           cache: pnpm
+          registry-url: https://npm.pkg.github.com/
+          scope: "@use-nyte"
 
       - name: Install dependencies
         run: pnpm install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
 
       - name: Synchronize repository documentation
         run: pnpm run docs:sync
