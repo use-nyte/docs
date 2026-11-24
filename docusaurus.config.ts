@@ -1,111 +1,110 @@
-import {themes as prismThemes} from 'prism-react-renderer';
-import type {Config} from '@docusaurus/types';
-import type * as Preset from '@docusaurus/preset-classic';
+import { themes as prismThemes } from "prism-react-renderer";
+import type { Config } from "@docusaurus/types";
+import type * as Preset from "@docusaurus/preset-classic";
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
 
 const config: Config = {
-  title: 'Nyte Documentation',
-  tagline: 'Documentation for the Nyte ecosystem',
-  favicon: 'img/favicon.ico',
+  title: "Nyte Documentation",
+  tagline: "Documentation for the Nyte ecosystem",
+  favicon: "img/favicon.ico",
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
-    v4: true, // Improve compatibility with the upcoming Docusaurus v4
+    v4: true // Improve compatibility with the upcoming Docusaurus v4
   },
 
   // Set the production url of your site here
-  url: 'https://use-nyte.github.io',
+  url: "https://use-nyte.github.io",
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
-  baseUrl: '/docs/',
+  baseUrl: "/docs/",
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
-  organizationName: 'use-nyte', // Usually your GitHub org/user name.
-  projectName: 'docs', // Usually your repo name.
+  organizationName: "use-nyte", // Usually your GitHub org/user name.
+  projectName: "docs", // Usually your repo name.
 
-  onBrokenLinks: 'throw',
+  onBrokenLinks: "throw",
 
   // Even if you don't use internationalization, you can use this field to set
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
-    locales: ['en'],
+    defaultLocale: "en",
+    locales: ["en"]
   },
 
   presets: [
     [
-      'classic',
+      "classic",
       {
         docs: {
           routeBasePath: "/",
-          sidebarPath: './sidebars.ts',
+          sidebarPath: "./sidebars.ts",
           // Please change this to your repo.
           // Remove this to remove the "edit this page" links.
-          editUrl:
-            'https://github.com/use-nyte/docs/edit/main/',
+          editUrl: "https://github.com/use-nyte/docs/edit/main/"
         },
         blog: false,
         theme: {
-          customCss: './src/css/custom.css',
-        },
-      } satisfies Preset.Options,
-    ],
+          customCss: "./src/css/custom.css"
+        }
+      } satisfies Preset.Options
+    ]
   ],
 
   themeConfig: {
     // Replace with your project's social card
-    image: 'img/docusaurus-social-card.jpg',
+    image: "img/docusaurus-social-card.jpg",
     colorMode: {
-      respectPrefersColorScheme: true,
+      respectPrefersColorScheme: true
     },
     navbar: {
-      title: 'nyte',
+      title: "nyte",
       items: [
         {
-          type: 'docSidebar',
-          sidebarId: 'documentation',
-          position: 'left',
-          label: 'Documentation',
+          type: "docSidebar",
+          sidebarId: "documentation",
+          position: "left",
+          label: "Documentation"
         },
         {
-          href: 'https://github.com/use-nyte',
-          label: 'GitHub',
-          position: 'right',
-        },
-      ],
+          href: "https://github.com/use-nyte",
+          label: "GitHub",
+          position: "right"
+        }
+      ]
     },
     footer: {
-      style: 'dark',
+      style: "dark",
       links: [
         {
-          title: 'Documentation',
+          title: "Documentation",
           items: [
             {
-              label: 'Home',
-              to: '/',
-            },
-          ],
+              label: "Home",
+              to: "/"
+            }
+          ]
         },
         {
-          title: 'Community',
+          title: "Community",
           items: [
             {
-              label: 'GitHub',
-              href: 'https://github.com/use-nyte',
-            },
-          ],
-        },
+              label: "GitHub",
+              href: "https://github.com/use-nyte"
+            }
+          ]
+        }
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} Nyte contributors.`,
+      copyright: `Copyright © ${new Date().getFullYear()} Nyte contributors.`
     },
     prism: {
       theme: prismThemes.github,
-      darkTheme: prismThemes.dracula,
-    },
-  } satisfies Preset.ThemeConfig,
+      darkTheme: prismThemes.dracula
+    }
+  } satisfies Preset.ThemeConfig
 };
 
 export default config;
