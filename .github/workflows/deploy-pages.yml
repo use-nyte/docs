@@ -60,6 +60,22 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ github.token }}
 
+      - name: Install Nyte Server dependencies
+        run: pnpm --dir .sources/nyte-server install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
+
+      - name: Generate Nyte Server API
+        run: pnpm --dir .sources/nyte-server run docs:build
+
+      - name: Install Nyte Web dependencies
+        run: pnpm --dir .sources/nyte-web install --frozen-lockfile
+        env:
+          NODE_AUTH_TOKEN: ${{ github.token }}
+
+      - name: Generate Nyte Web API
+        run: pnpm --dir .sources/nyte-web run docs:build
+
       - name: Synchronize repository documentation
         run: pnpm run docs:sync
 

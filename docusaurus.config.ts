@@ -36,37 +36,37 @@ const config: Config = {
   },
   plugins: [
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'nyte-server',
-        path: '.generated/docs/nyte-server',
-        routeBasePath: 'nyte-server',
-        lastVersion: 'current',
+        id: "nyte-server",
+        path: ".generated/docs/nyte-server",
+        routeBasePath: "nyte-server",
+        lastVersion: "current",
         versions: {
           current: {
-            label: 'Current',
-            banner: 'none',
-            badge: false,
-          },
-        },
-      },
+            label: "Current",
+            banner: "none",
+            badge: false
+          }
+        }
+      }
     ],
     [
-      '@docusaurus/plugin-content-docs',
+      "@docusaurus/plugin-content-docs",
       {
-        id: 'nyte-web',
-        path: '.generated/docs/nyte-web',
-        routeBasePath: 'nyte-web',
-        lastVersion: 'current',
+        id: "nyte-web",
+        path: ".generated/docs/nyte-web",
+        routeBasePath: "nyte-web",
+        lastVersion: "current",
         versions: {
           current: {
-            label: 'Current',
-            banner: 'none',
-            badge: false,
-          },
-        },
-      },
-    ],
+            label: "Current",
+            banner: "none",
+            badge: false
+          }
+        }
+      }
+    ]
   ],
   presets: [
     [
@@ -107,29 +107,29 @@ const config: Config = {
           position: "right"
         },
         {
-          type: 'doc',
-          docsPluginId: 'nyte-server',
-          docId: 'overview',
-          label: 'Server',
-          position: 'left',
+          type: "doc",
+          docsPluginId: "nyte-server",
+          docId: "overview",
+          label: "Server",
+          position: "left"
         },
         {
-          type: 'doc',
-          docsPluginId: 'nyte-web',
-          docId: 'overview',
-          label: 'Web',
-          position: 'left',
+          type: "doc",
+          docsPluginId: "nyte-web",
+          docId: "overview",
+          label: "Web",
+          position: "left"
         },
         {
-          type: 'docsVersionDropdown',
-          docsPluginId: 'nyte-server',
-          position: 'right',
+          type: "docsVersionDropdown",
+          docsPluginId: "nyte-server",
+          position: "right"
         },
         {
-          type: 'docsVersionDropdown',
-          docsPluginId: 'nyte-web',
-          position: 'right',
-        },
+          type: "docsVersionDropdown",
+          docsPluginId: "nyte-web",
+          position: "right"
+        }
       ]
     },
     footer: {
