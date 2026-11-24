@@ -6,7 +6,7 @@ const repositories = ["nyte-server", "nyte-web"];
 
 for (const repository of repositories) {
   const source = resolve(root, ".sources", repository, "docs");
-  const destination = resolve(root, "docs", repository, "main");
+  const destination = resolve(root, ".generated", "docs", repository);
 
   if (!existsSync(source)) {
     throw new Error(`Documentation source missing: ${source}`);
@@ -26,5 +26,5 @@ for (const repository of repositories) {
     }
   });
 
-  console.log(`Synchronized ${repository}/main`);
+  console.log(`Synchronized ${repository}`);
 }

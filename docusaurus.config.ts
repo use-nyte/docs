@@ -34,7 +34,40 @@ const config: Config = {
     defaultLocale: "en",
     locales: ["en"]
   },
-
+  plugins: [
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'nyte-server',
+        path: '.generated/docs/nyte-server',
+        routeBasePath: 'nyte-server',
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: 'Current',
+            banner: 'none',
+            badge: false,
+          },
+        },
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'nyte-web',
+        path: '.generated/docs/nyte-web',
+        routeBasePath: 'nyte-web',
+        lastVersion: 'current',
+        versions: {
+          current: {
+            label: 'Current',
+            banner: 'none',
+            badge: false,
+          },
+        },
+      },
+    ],
+  ],
   presets: [
     [
       "classic",
@@ -53,7 +86,6 @@ const config: Config = {
       } satisfies Preset.Options
     ]
   ],
-
   themeConfig: {
     // Replace with your project's social card
     image: "img/docusaurus-social-card.jpg",
@@ -73,7 +105,31 @@ const config: Config = {
           href: "https://github.com/use-nyte",
           label: "GitHub",
           position: "right"
-        }
+        },
+        {
+          type: 'doc',
+          docsPluginId: 'nyte-server',
+          docId: 'overview',
+          label: 'Server',
+          position: 'left',
+        },
+        {
+          type: 'doc',
+          docsPluginId: 'nyte-web',
+          docId: 'overview',
+          label: 'Web',
+          position: 'left',
+        },
+        {
+          type: 'docsVersionDropdown',
+          docsPluginId: 'nyte-server',
+          position: 'right',
+        },
+        {
+          type: 'docsVersionDropdown',
+          docsPluginId: 'nyte-web',
+          position: 'right',
+        },
       ]
     },
     footer: {
