@@ -1,6 +1,9 @@
 name: Deploy Documentation
 
 on:
+  pull_request:
+    branches:
+      - main
   push:
     branches:
       - main
@@ -83,15 +86,18 @@ jobs:
         run: pnpm run build
 
       - name: Configure GitHub Pages
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/configure-pages@v6
 
       - name: Upload website
+        if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
         uses: actions/upload-pages-artifact@v5
         with:
           path: ./build
 
   deploy:
     name: Deploy Documentation
+    if: github.ref == 'refs/heads/main' && github.event_name != 'pull_request'
     needs: build
     runs-on: ubuntu-latest
     timeout-minutes: 10

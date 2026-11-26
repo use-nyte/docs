@@ -57,6 +57,8 @@ const config: Config = {
         id: "nyte-web",
         path: ".generated/docs/nyte-web",
         routeBasePath: "nyte-web",
+        // TypeDoc includes the TanStack Router `__root` directory in the generated reference.
+        exclude: ["**/_*.{md,mdx}", "**/__tests__/**"],
         lastVersion: "current",
         versions: {
           current: {
