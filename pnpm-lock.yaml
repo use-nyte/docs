@@ -214,7 +214,7 @@ importers:
         version: 2.0.2(jiti@1.21.7)(prettier@3.10.1)(supports-color@8.1.1)(typescript@6.0.3)
       '@use-nyte/prettier-config':
         specifier: ^2.0.2
-        version: 2.0.2(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
+        version: 2.0.4(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
       typescript:
         specifier: ~6.0.2
         version: 6.0.3
@@ -2349,8 +2349,8 @@ packages:
     resolution: {integrity: sha512-5pJgtuuv9X6+308jYhVhaLCwjJNjcgUrZfSp4k4y5b7qyIU3PduGE6IVn6lYRPq54d3BZeWRMdzazm7rUr4Fuw==, tarball: https://npm.pkg.github.com/download/@use-nyte/eslint-config/2.0.2/494a3ce666c22e767911c8c19f8aaa48b75635df}
     hasBin: true
 
-  '@use-nyte/prettier-config@2.0.2':
-    resolution: {integrity: sha512-+biM86rFRMN2cfYsVK0KO8CLGVPFSnLvQ/aiX20Bl0HJi64rOY7Dy5WN+U5Et89eJW+b6zTnLC0gGs/Bqi+eCQ==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.2/d6b10fa355f6bdf40626cf9d713364ccb5c5ffb9}
+  '@use-nyte/prettier-config@2.0.4':
+    resolution: {integrity: sha512-eAEP9m8B7VsD3SGIFtFE4Q9I7bVM/v0xoa5T1wTVCSqStTMqXmRwyUSeq0qkXdtiNHxMaBgs/hcoEk0QFO3mjg==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.4/9cb1c50ba819a8d7568c5869f33fe32a215202eb}
     hasBin: true
 
   '@webassemblyjs/ast@1.14.1':
@@ -9870,7 +9870,7 @@ snapshots:
       - supports-color
       - typescript
 
-  '@use-nyte/prettier-config@2.0.2(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
+  '@use-nyte/prettier-config@2.0.4(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)':
     dependencies:
       ignore: 5.3.2
       prettier: 3.10.1
