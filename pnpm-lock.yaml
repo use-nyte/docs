@@ -179,22 +179,22 @@ importers:
         specifier: 3.10.2
         version: 3.10.2(@algolia/client-search@5.65.0)(@docusaurus/faster@3.10.2(@docusaurus/types@3.10.2(@swc/core@1.16.22)(@swc/html@1.16.22)(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.33))(csso@5.0.5)(html-minifier-terser@7.2.0)(lightningcss@1.33.0)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@8.1.1)(svgo@3.3.5))(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.33))(csso@5.0.5)(html-minifier-terser@7.2.0)(postcss@8.5.33)(svgo@3.3.5))(@mdx-js/react@3.1.1(@types/react@19.3.0)(react@19.3.1))(@rspack/core@1.7.12)(@swc/core@1.16.22)(@swc/html@1.16.22)(@types/react@19.3.0)(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.33))(csso@5.0.5)(debug@4.4.3(supports-color@8.1.1))(html-minifier-terser@7.2.0)(lightningcss@1.33.0)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(search-insights@2.17.3)(supports-color@8.1.1)(svgo@3.3.5)(typescript@6.0.3)
       '@mdx-js/react':
-        specifier: ^3.0.0
+        specifier: 3.1.1
         version: 3.1.1(@types/react@19.3.0)(react@19.3.1)
       always:
-        specifier: ^2.2.0
+        specifier: 2.2.0
         version: 2.2.0
       clsx:
-        specifier: ^2.0.0
+        specifier: 2.1.1
         version: 2.1.1
       prism-react-renderer:
-        specifier: ^2.3.0
+        specifier: 2.4.1
         version: 2.4.1(react@19.3.1)
       react:
-        specifier: ^19.0.0
+        specifier: 19.3.1
         version: 19.3.1
       react-dom:
-        specifier: ^19.0.0
+        specifier: 19.3.1
         version: 19.3.1(react@19.3.1)
     devDependencies:
       '@docusaurus/module-type-aliases':
@@ -207,16 +207,16 @@ importers:
         specifier: 3.10.2
         version: 3.10.2(@swc/core@1.16.22)(@swc/html@1.16.22)(clean-css@5.3.3)(cssnano@6.1.2(postcss@8.5.33))(csso@5.0.5)(html-minifier-terser@7.2.0)(lightningcss@1.33.0)(postcss@8.5.33)(react-dom@19.3.1(react@19.3.1))(react@19.3.1)(supports-color@8.1.1)(svgo@3.3.5)
       '@types/react':
-        specifier: ^19.0.0
+        specifier: 19.3.0
         version: 19.3.0
       '@use-nyte/eslint-config':
-        specifier: ^2.0.2
+        specifier: 2.0.2
         version: 2.0.2(jiti@1.21.7)(prettier@3.10.1)(supports-color@8.1.1)(typescript@6.0.3)
       '@use-nyte/prettier-config':
-        specifier: ^2.0.2
+        specifier: 2.0.2
         version: 2.0.2(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@6.0.3)
       typescript:
-        specifier: ~6.0.2
+        specifier: 6.0.3
         version: 6.0.3
 
 packages:
