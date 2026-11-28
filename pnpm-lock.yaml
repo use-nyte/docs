@@ -232,8 +232,8 @@ importers:
         specifier: 2.1.1
         version: 2.1.1(jiti@1.21.7)(prettier@3.10.1)(supports-color@8.1.1)(typescript@7.0.2)
       '@use-nyte/prettier-config':
-        specifier: 2.0.2
-        version: 2.0.2(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)
+        specifier: 2.0.5
+        version: 2.0.5(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)
       typescript:
         specifier: 7.0.2
         version: 7.0.2
@@ -2489,8 +2489,9 @@ packages:
     engines: {node: 26.13.1}
     hasBin: true
 
-  '@use-nyte/prettier-config@2.0.2':
-    resolution: {integrity: sha512-+biM86rFRMN2cfYsVK0KO8CLGVPFSnLvQ/aiX20Bl0HJi64rOY7Dy5WN+U5Et89eJW+b6zTnLC0gGs/Bqi+eCQ==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.2/d6b10fa355f6bdf40626cf9d713364ccb5c5ffb9}
+  '@use-nyte/prettier-config@2.0.5':
+    resolution: {integrity: sha512-1jSqYaUzsejk4yiCwYDvHhWSZiYTT1DezZxMXU4j9bpaWQER6Q+Tj4ZFf8199dMzyIN40uuB7V8+0mQZ5fSVdg==, tarball: https://npm.pkg.github.com/download/@use-nyte/prettier-config/2.0.5/4034ad5679dad218e1d3e749387a1e34b0e31b47}
+    engines: {node: 26.13.1}
     hasBin: true
 
   '@webassemblyjs/ast@1.14.1':
@@ -3878,6 +3879,10 @@ packages:
 
   ignore@7.0.16:
     resolution: {integrity: sha512-52N+Y4HRMOJmbLmr+DqO4iSRyyB7N52gm7PWCT6h0p978+oKbqHCB7gIJIwZvBUsjlSdWbrBFqUSmIFNZMpn0A==}
+    engines: {node: '>= 4'}
+
+  ignore@7.0.17:
+    resolution: {integrity: sha512-0c3zcBRlWmcKhcIQWckzkYncJRv5HHB8O32wO/FcWL8DDXWDJgiEF6SX9ThbTv5h/eZ+xJK+VvDjjQ+cQJhp3Q==}
     engines: {node: '>= 4'}
 
   image-size@2.1.0:
@@ -9756,9 +9761,9 @@ snapshots:
       - supports-color
       - typescript
 
-  '@use-nyte/prettier-config@2.0.2(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)':
+  '@use-nyte/prettier-config@2.0.5(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(supports-color@8.1.1)(typescript@7.0.2)':
     dependencies:
-      ignore: 5.3.2
+      ignore: 7.0.17
       prettier: 3.10.1
       prettier-plugin-organize-class-members: 1.0.0-beta.6(@babel/preset-env@7.29.14(@babel/core@7.29.13(supports-color@8.1.1))(supports-color@8.1.1))(prettier@3.10.1)(supports-color@8.1.1)
       prettier-plugin-organize-imports: 4.3.0(prettier@3.10.1)(typescript@7.0.2)
@@ -11385,6 +11390,8 @@ snapshots:
   ignore@5.3.2: {}
 
   ignore@7.0.16: {}
+
+  ignore@7.0.17: {}
 
   image-size@2.1.0: {}
 
