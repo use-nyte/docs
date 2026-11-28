@@ -38,7 +38,7 @@
     "@types/react": "19.3.0",
     "@use-nyte/eslint-config": "2.0.2",
     "@use-nyte/prettier-config": "2.0.2",
-    "typescript": "6.0.3"
+    "typescript": "7.0.2"
   },
   "browserslist": {
     "production": [
@@ -53,7 +53,7 @@
     ]
   },
   "engines": {
-    "node": "26.13.0"
+    "node": "26.13.1"
   },
   "packageManager": "pnpm@12.18.0"
 }
