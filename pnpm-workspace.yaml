@@ -2,5 +2,4 @@ allowBuilds:
   '@swc/core': true
   core-js: true
 minimumReleaseAgeExclude:
-  - '@use-nyte/eslint-config@2.0.1 || 2.0.2'
-  - '@use-nyte/prettier-config@2.0.1 || 2.0.2'
+  - "@use-nyte/*"
